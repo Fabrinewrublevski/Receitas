@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | Receitas da Beane</title>
+
+    <link rel="stylesheet" href="css/receitas.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <div class="tudo">
+
+        <header class="banner">
+
+            <nav class="liba" aria-label="Menu principal">
+
+                <a href="index.html">Início</a>
+                <a href="explorar.html">Explorar</a>
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo Receitas da Beane"></a>
+                <a href="ferramentas.html">Ferramentas</a>
+                <a href="contato.html" aria-current="page">Contato</a>
+
+            </nav>
+
+            <button type="button" id="botaoTema" class="botaoTema" aria-pressed="false" aria-label="Modo escuro" title="Modo escuro">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+
+        </header>
+
+        <main class="area">
+
+            <h1 class="tituloPagina">Fale com a gente</h1>
+
+            <section class="info" aria-labelledby="tituloFormulario">
+
+                <h2 id="tituloFormulario">Mande sua dúvida ou sugestão de receita</h2>
+
+                <form id="formContato" class="formulario">
+
+                    <div class="campos">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome" required>
+
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(41) 99999-9999">
+
+                        <label for="porcoes">Para quantas pessoas você costuma cozinhar?</label>
+                        <input type="number" id="porcoes" name="porcoes" min="1" step="1" placeholder="Ex.: 4">
+
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao">Enviar</button>
+
+                </form>
+
+                <p id="retornoEnvio" class="resultado" role="status"></p>
+
+            </section>
+
+        </main>
+
+        <footer class="rodape">
+            <p>Receitas da Beane · Projeto Final de Web Dev Front-End · PUCPR 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+
+</html>
