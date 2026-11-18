@@ -11,6 +11,8 @@ Projeto Final (RA 3) de Web Dev Front-End, PUCPR, 2026.
 
 | Eric Binek Sant'Anna | API e JavaScript: requisições GET/POST, cartões dinâmicos, busca, filtro, favoritos, modo escuro e a ferramenta do TDE 01 |
 
+| Fabio Augusto | JavaScript |
+
 | Fabrine Wrublevski | JavaScript |
 
 | Maria Clara | Debugging e Ferramentas |
