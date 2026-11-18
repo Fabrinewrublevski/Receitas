@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorar receitas | Receitas da Beane</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <div class="tudo">
+
+        <header class="banner">
+
+            <nav class="liba" aria-label="Menu principal">
+
+                <a href="index.html">Início</a>
+                <a href="explorar.html" aria-current="page">Explorar</a>
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo Receitas da Beane"></a>
+                <a href="ferramentas.html">Ferramentas</a>
+                <a href="contato.html">Contato</a>
+
+            </nav>
+
+            <button type="button" id="botaoTema" class="botaoTema" aria-pressed="false" aria-label="Modo escuro" title="Modo escuro">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+
+        </header>
+
+        <main class="area">
+
+            <h1 class="tituloPagina">Explorar receitas</h1>
+
+            <section class="info painel" aria-labelledby="tituloBusca">
+
+                <h2 id="tituloBusca">Buscar e filtrar</h2>
+
+                <div class="campos">
+                    <label for="campoBusca">Nome da receita (a API está em inglês)</label>
+                    <input type="search" id="campoBusca" placeholder="Ex.: chicken, cake, pasta" autocomplete="off">
+
+                    <label for="filtroCategoria">Categoria</label>
+                    <select id="filtroCategoria">
+                        <option value="todas">Todas as categorias</option>
+                    </select>
+                </div>
+
+            </section>
+
+            <p id="statusReceitas" class="status" role="status">Carregando...</p>
+
+            <section id="listaReceitas" class="dois" aria-label="Receitas encontradas"></section>
+
+        </main>
+
+        <footer class="rodape">
+            <p>Receitas da Beane · Projeto Final de Web Dev Front-End · PUCPR 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/explorar.js"></script>
+</body>
+
+</html>

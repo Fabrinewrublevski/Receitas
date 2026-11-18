@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <title>Receitas da Beane</title>
 
     <!-- CSS está na pasta css -->
-    <link rel="stylesheet" href="css/receitas.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Imagem está na pasta img -->
     <link rel="icon" type="image/png" href="img/logo.png">
@@ -17,28 +17,32 @@
 <body>
     <div class="tudo">
 
-        <div class="banner">
+        <header class="banner">
+            <nav class="liba" aria-label="Menu principal">
+                <a href="index.html" aria-current="page">Início</a>
+                <a href="explorar.html">Explorar</a>
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo Receitas da Beane"></a>
+                <a href="ferramentas.html">Ferramentas</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <button type="button" id="botaoTema" class="botaoTema" aria-pressed="false" aria-label="Modo escuro" title="Modo escuro">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
 
-            <div class="liba">
+        </header>
 
-                <a>Doces</a>
+        <main class="area">
 
-                <img src="img/logo.png" class="logo">
+            <h1 class="tituloPagina">Receitas da Beane</h1>
 
-                <a>Salgados</a>
-
-            </div>
-
-        </div>
-
-        <div class="dois">
+        <section class="dois" aria-label="Receitas da família">
 
             <a href="html/bolo.html">
                 <div class="cenoura">
-                    <img src="img/bolo_chocolate.jpeg" alt="">
+                    <img src="img/bolo_chocolate.jpeg" alt="Bolo de chocolate">
                     <div>
-                        <h4>Bolo de chocolate</h4>
-                        <h5>Necessario:</h5>
+                        <h2>Bolo de chocolate</h2>
+                        <h3>Necessário:</h3>
                         <p>10 ingredientes</p>
                     </div>
                 </div>
@@ -46,32 +50,32 @@
 
             <a href="html/cenoura.html">
                 <div class="cenoura">
-                    <img src="img/bolo_cenoura.jpeg" alt="">
+                    <img src="img/bolo_cenoura.jpeg" alt="Bolo de cenoura com cobertura">
                     <div>
-                        <h4>Bolo de cenoura</h4>
-                        <h5>Necessario:</h5>
-                        <p>6 ingredientes</p>
+                        <h2>Bolo de cenoura</h2>
+                        <h3>Necessário:</h3>
+                        <p>7 ingredientes</p>
                     </div>
                 </div>
             </a>
 
             <a href="html/enroladinho.html">
                 <div class="cenoura">
-                    <img src="img/enroladinho.jpeg" alt="">
+                    <img src="img/enroladinho.jpeg" alt="Enroladinhos de salsicha assados">
                     <div>
-                        <h4>Enroladinho de Salsicha Assado</h4>
-                        <h5>Necessario</h5>
-                        <p>6 ingredientes</p>
+                        <h2>Enroladinho de Salsicha Assado</h2>
+                        <h3>Necessário:</h3>
+                        <p>7 ingredientes</p>
                     </div>
                 </div>
             </a>
 
             <a href="html/brownie.html">
                 <div class="cenoura">
-                    <img src="img/brownie.jpeg" alt="">
+                    <img src="img/brownie.jpeg" alt="Pedaços de brownie caseiro">
                     <div>
-                        <h4>Brownie caseiro</h4>
-                        <h5>Necessario</h5>
+                        <h2>Brownie caseiro</h2>
+                        <h3>Necessário:</h3>
                         <p>5 ingredientes</p>
                     </div>
                 </div>
@@ -79,10 +83,10 @@
 
             <a href="html/panqueca.html">
                 <div class="cenoura">
-                    <img src="img/panqueca.jpeg" alt="">
+                    <img src="img/panqueca.jpeg" alt="Panquecas">
                     <div>
-                        <h4>Panqueca</h4>
-                        <h5>Necessário:</h5>
+                        <h2>Panqueca</h2>
+                        <h3>Necessário:</h3>
                         <p>5 ingredientes</p>
                     </div>
                 </div>
@@ -90,10 +94,10 @@
 
             <a href="html/limao.html">
                 <div class="cenoura">
-                    <img src="img/limao.jpeg" alt="">
+                    <img src="img/limao.jpeg" alt="Torta de limão">
                     <div>
-                        <h4>Torta de Limão</h4>
-                        <h5>Necessário:</h5>
+                        <h2>Torta de Limão</h2>
+                        <h3>Necessário:</h3>
                         <p>6 ingredientes</p>
                     </div>
                 </div>
@@ -101,10 +105,10 @@
 
             <a href="html/fuba.html">
                 <div class="cenoura">
-                    <img src="img/fuba.jpeg" alt="">
+                    <img src="img/fuba.jpeg" alt="Bolo de fubá cremoso">
                     <div>
-                        <h4>Bolo de fubá cremoso</h4>
-                        <h5>Necessário:</h5>
+                        <h2>Bolo de fubá cremoso</h2>
+                        <h3>Necessário:</h3>
                         <p>8 ingredientes</p>
                     </div>
                 </div>
@@ -112,18 +116,27 @@
 
             <a href="html/cafe.html">
                 <div class="cenoura">
-                    <img src="img/cafe.jpeg" alt="">
+                    <img src="img/cafe.jpeg" alt="Café cremoso">
                     <div>
-                        <h4>Café cremoso</h4>
-                        <h5>Necessario:</h5>
+                        <h2>Café cremoso</h2>
+                        <h3>Necessário:</h3>
                         <p>3 ingredientes</p>
                     </div>
                 </div>
             </a>
 
-        </div>
+        </section>
+
+        </main>
+
+        <footer class="rodape">
+            <p>Receitas da Beane · Projeto Final de Web Dev Front-End · PUCPR 2026</p>
+            <p> Membros: Eric, Fabrine, Fabio, Maria Clara e Rubia.</p>
+        </footer>
 
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

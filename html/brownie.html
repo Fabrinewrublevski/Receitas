@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <title>Receitas</title>
+    <title>Brownie de Nescau | Receitas da Beane</title>
  
-    <link rel="stylesheet" href="../css/receitas.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" href="../img/logo.png">
 </head>
  
 <body>
- 
     <div class="tudo">
+         <header class="banner">
+            <nav class="liba" aria-label="Menu principal">
+                <a href="../index.html">Início</a>
+                <a href="../explorar.html">Explorar</a>
+                <a href="../index.html"><img src="../img/logo.png" class="logo" alt="Logo Receitas da Beane"></a>
+                <a href="../ferramentas.html">Ferramentas</a>
+                <a href="../contato.html">Contato</a>
+            </nav>
+            <button type="button" id="botaoTema" class="botaoTema" aria-pressed="false" aria-label="Modo escuro" title="Modo escuro">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            </button>
+        </header> 
  
-        <div class="banner">
- 
-            <div class="liba">
- 
-                <a>Doces</a>
- 
-                <a href="../index.html">
-                    <img src="../img/logo.png" class="logo">
-                </a>
- 
-                <a>Salgados</a>
- 
-            </div>
- 
-        </div>
- 
- 
+        <main class="area">
         <div class="dois">
  
             <div class="info">
  
-                <img src="../img/brownie.jpeg" alt="Brownie de Nescau" class="foto">
+                <figure class="figura">
+                    <img src="../img/brownie.jpeg" alt="Brownie de Nescau" class="foto">
+                    <figcaption>Brownie com casquinha crocante</figcaption>
+                </figure>
  
                 <div class="caixa">
  
-                    <h2>Brownie de Nescau</h2>
+                    <h1>Brownie de Nescau</h1>
  
-                    <h3>Ingredientes</h3>
+                    <h2>Ingredientes</h2>
  
                     <p>
                         - 3 ovos <br>
@@ -53,7 +51,7 @@
                     </p>
  
  
-                    <h3>Modo de preparo</h3>
+                    <h2>Modo de preparo</h2>
  
                     <ol>
  
@@ -107,83 +105,89 @@
  
             <!-- Outras receitas -->
  
-           <a href="bolo.html">
+           <aside class="outras" aria-labelledby="tituloOutras">
+            <h2 id="tituloOutras" class="tituloOutras">Outras receitas da família</h2>
+            <a href="bolo.html">
                 <div class="cenoura">
-                    <img src="../img/bolo_chocolate.jpeg" alt="">
+                    <img src="../img/bolo_chocolate.jpeg" alt="Bolo de chocolate">
                     <div>
-                        <h4>Bolo de chocolate</h4>
-                        <h5>Necessario:</h5>
+                        <h3 class="tituloCartao">Bolo de chocolate</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
                         <p>10 ingredientes</p>
                     </div>
                 </div>
             </a>
- 
-            <!-- O link 'a' também abraça a div inteira do bolo de cenoura -->
             <a href="cenoura.html">
                 <div class="cenoura">
-                    <img src="../img/bolo_cenoura.jpeg" alt="">
+                    <img src="../img/bolo_cenoura.jpeg" alt="Bolo de cenoura com cobertura">
                     <div>
-                        <h4>Bolo de cenoura</h4>
-                        <h5>Necessario:</h5>
-                        <p>6 ingredientes</p>
+                        <h3 class="tituloCartao">Bolo de cenoura</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
+                        <p>7 ingredientes</p>
                     </div>
                 </div>
             </a>
             <a href="enroladinho.html">
                 <div class="cenoura">
-                    <img src="../img/enroladinho.jpeg" alt="">
+                    <img src="../img/enroladinho.jpeg" alt="Enroladinhos de salsicha assados">
                     <div>
-                        <h4>Enroladinho de Salsicha Assado</h4>
-                        <h5>Necessario</h5>
-                        <p>6 ingredientes</p>
+                        <h3 class="tituloCartao">Enroladinho de Salsicha Assado</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
+                        <p>7 ingredientes</p>
                     </div>
                 </div>
             </a>
             <a href="panqueca.html">
                 <div class="cenoura">
-                    <img src="../img/panqueca.jpeg" alt="">
+                    <img src="../img/panqueca.jpeg" alt="Panquecas">
                     <div>
-                        <h4>Panqueca</h4>
-                        <h5>Necessário:</h5>
+                        <h3 class="tituloCartao">Panqueca</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
                         <p>5 ingredientes</p>
                     </div>
                 </div>
             </a>
             <a href="limao.html">
                 <div class="cenoura">
-                    <img src="../img/limao.jpeg" alt="">
+                    <img src="../img/limao.jpeg" alt="Torta de limão">
                     <div>
-                        <h4>Torta de Limão</h4>
-                        <h5>Necessário:</h5>
-                        <p>06ingredientes</p>
+                        <h3 class="tituloCartao">Torta de Limão</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
+                        <p>6 ingredientes</p>
                     </div>
                 </div>
             </a>
             <a href="fuba.html">
                 <div class="cenoura">
-                    <img src="../img/fuba.jpeg" alt="">
+                    <img src="../img/fuba.jpeg" alt="Bolo de fubá cremoso">
                     <div>
-                        <h4>bolo de fubá cremoso</h4>
-                        <h5>Necessário:</h5>
+                        <h3 class="tituloCartao">Bolo de fubá cremoso</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
                         <p>8 ingredientes</p>
                     </div>
                 </div>
             </a>
             <a href="cafe.html">
                 <div class="cenoura">
-                    <img src="../img/cafe.jpeg" alt="">
+                    <img src="../img/cafe.jpeg" alt="Café cremoso">
                     <div>
-                        <h4>Cafe cremoso </h4>
-                        <h5>Necessário:</h5>
+                        <h3 class="tituloCartao">Café cremoso</h3>
+                        <h4 class="subtituloCartao">Necessário:</h4>
                         <p>3 ingredientes</p>
                     </div>
                 </div>
             </a>
+            </aside>
  
         </div>
+        </main>
+
+        <footer class="rodape">
+            <p>Receitas da Beane · Projeto Final de Web Dev Front-End · PUCPR 2026</p>
+        </footer>
  
     </div>
  
+    <script src="../js/script.js"></script>
 </body>
 </html>
- 

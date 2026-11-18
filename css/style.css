@@ -1,0 +1,464 @@
+/* CORPO DA PÁGINA */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3a2a30;
+    background-color: #fff8fa;
+}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* BANNER */
+.banner {
+    padding: 0 20px;
+    width: 100%;
+    height: 150px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* MENU + LOGO */
+.liba {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* INFORMAÇÕES */
+.info {
+    background-color: pink;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* CAIXA */
+.caixa {
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+/* RECEITAS */
+.dois,
+.outras {
+    display: grid;
+
+    /* 4 receitas por linha */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 0 20px;
+}
+
+/* LINK DA RECEITA */
+.dois > a,
+.outras > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CARD DA RECEITA */
+.cenoura {
+    background-color: pink;
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* IMAGEM DAS RECEITAS */
+.cenoura img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* LINKS */
+a {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(228, 86, 133);
+}
+
+/* TÍTULOS */
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* FOTO DE OUTRAS PÁGINAS */
+.figura {
+    width: 550px;
+    max-width: 100%;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.figura figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}
+
+.foto {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.dois > .info {
+    grid-column: 1 / -1;
+}
+
+
+/* ========================= */
+/* TELA MENOR */
+/* ========================= */
+
+@media (max-width: 1170px) {
+
+    .dois,
+    .outras {
+        /* 2 receitas por linha */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .dois,
+    .outras {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .cenoura {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cenoura img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .figura {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+}
+
+/* ========================= */
+/* PÁGINAS NOVAS E JAVASCRIPT */
+/* ========================= */
+
+.banner {
+    gap: 20px;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.area > .dois {
+    padding: 0;
+}
+
+.tituloPagina {
+    margin: 0;
+    color: palevioletred;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+}
+
+.cenoura h2 {
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.cenoura h3 {
+    font-size: 0.83em;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+
+.liba a[aria-current="page"] {
+    font-weight: bold;
+}
+
+.rodape {
+    background-color: pink;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.botao {
+    background-color: palevioletred;
+    color: white;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
+    padding: 8px 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(228, 86, 133);
+    border-color: rgb(228, 86, 133);
+}
+
+.botao:focus-visible {
+    outline: 3px solid #8a2a4a;
+    outline-offset: 2px;
+}
+
+.botao:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* BOTÃO DE TEMA (LUA NO CANTO DO HEADER) */
+.banner {
+    position: relative;
+}
+
+.botaoTema {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: palevioletred;
+    cursor: pointer;
+}
+
+.botaoTema svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.botaoTema:hover {
+    color: rgb(228, 86, 133);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.botaoTema:focus-visible {
+    outline: 2px solid #8a2a4a;
+    outline-offset: 2px;
+}
+
+/* Lua preenchida quando o modo escuro está ligado */
+.botaoTema[aria-pressed="true"] svg {
+    fill: currentColor;
+}
+
+.botaoFavorito.favorito {
+    background-color: white;
+    color: palevioletred;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 480px;
+}
+
+.campos label {
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.campos input,
+.campos select,
+.campos textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid palevioletred;
+    border-radius: 8px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.campos input:focus,
+.campos select:focus,
+.campos textarea:focus {
+    outline: none;
+    border-color: rgb(228, 86, 133);
+}
+
+.campos input::placeholder,
+.campos textarea::placeholder {
+    color: #a8899a;
+}
+
+.campos .erro {
+    border-color: #b00020;
+}
+
+.status,
+.resultado {
+    margin: 0;
+    font-weight: bold;
+}
+
+.resultado {
+    margin-top: 10px;
+}
+
+.status.erro,
+.resultado.erro {
+    color: #b00020;
+}
+
+.listaFiltrada {
+    padding-left: 20px;
+}
+
+/* MODO ESCURO */
+body.escuro {
+    background-color: #1f1a1c;
+    color: #f3e6ea;
+}
+
+body.escuro .banner,
+body.escuro .cenoura,
+body.escuro .info,
+body.escuro .rodape {
+    background-color: hsl(340, 30%, 25%);
+}
+
+body.escuro a,
+body.escuro .tituloPagina,
+body.escuro .botaoTema {
+    color: #f7a8c4;
+}
+
+body.escuro .botaoTema:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+body.escuro .campos input,
+body.escuro .campos select,
+body.escuro .campos textarea {
+    background-color: #2b2326;
+    color: #f3e6ea;
+}
+
+body.escuro .status.erro,
+body.escuro .resultado.erro,
+body.escuro .campos .erro {
+    color: #ff8a9a;
+    border-color: #ff8a9a;
+}
+
+@media (max-width: 600px) {
+
+    .banner {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .liba {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .area {
+        padding: 0 10px;
+    }
+
+}
+
+/* OUTRAS RECEITAS (ASIDE NAS PÁGINAS DE RECEITA) */
+.dois > .outras {
+    grid-column: 1 / -1;
+    padding: 0;
+}
+
+.outras > .tituloOutras {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: palevioletred;
+}
+
+.cenoura .tituloCartao {
+    margin: 0 0 6px;
+    font-size: 1em;
+}
+
+.cenoura .subtituloCartao {
+    margin: 0 0 4px;
+    font-size: 0.83em;
+}
+
+body.escuro .outras > .tituloOutras {
+    color: #f7a8c4;
+}
+
+body.escuro .figura figcaption {
+    color: #f3e6ea;
+}
